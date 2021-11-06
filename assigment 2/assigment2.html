@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+    #cont{
+        width: 1100px;
+        height: 1500px;
+        background-color: aqua;
+        border:2px solid#000;
+        
+    }
+    .imm{
+        width: 300px;
+        height: 250px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <div class="imm"> <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1528&q=80" height="100%" width="100%"></div>
+        <div class="imm"> <img src="https://images.unsplash.com/photo-1485550409059-9afb054cada4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=465&q=80" height="100%" width="100%"> </div>
+        <div class="imm"> <img src="https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80" height="100%" width="100%">  </div>
+        <div class="imm"> <img src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" height="100%" width="100%">  </div>
+    <p>helllo guyes kill noo mwwd</p>
+    </div>
+
+
+    <script>
+    const box1 = document.querySelectorAll("img");
+    console.log(box1)
+    
+    box1.forEach((e)=>{
+     e.src="https://media.giphy.com/media/jaqvaWqpKfImQ/giphy.gif" } )
+    </script>
+
+    <script>
+       function capletter(string){
+             var oldArray = string.split(' ') ;
+            var newArray = [];
+                for( var i = 0 ; i < oldArray.length ; i++){
+                    newArray.push(oldArray[i].charAt(0).toUpperCase() + oldArray[i].slice(1));
+                }
+                return newArray.join(' ');
+       }
+      
+       const box2 = document.querySelectorAll("p");
+       
+       console.log(capletter(box2));
+      
+        
+    </script>
+</body>
+</html>
